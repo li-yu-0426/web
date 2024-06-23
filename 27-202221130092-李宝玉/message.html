@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>留言板 | 石塑粘土艺术爱好者</title>
+    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="message.css">
+</head>
+<body>
+    <header>
+        <h1>留言板|粘土艺术爱好者</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">首页</a></li>
+                <li><a href="about.html">关于我</a></li>
+                <li><a href="gallery.html">作品展示</a></li>
+                <li><a href="contact.html" class="active">留言板</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="form-container">
+        <form action="/submit-contact-form" method="post">
+            <fieldset>
+              <legend>联系我</legend>
+              <label for="name">姓名:</label>
+              <input type="text" id="name" name="name" required placeholder="请输入您的姓名">
+              
+              <label for="email">邮箱:</label>
+              <input type="email" id="email" name="email" required placeholder="请输入您的邮箱地址">
+              
+              <label for="message">留言:</label>
+              <textarea id="message" name="message" rows="5" required placeholder="请输入您的留言"></textarea>
+              
+              <button type="submit">发送留言</button>
+            </fieldset>
+        </form>
+    </div>
+
+    <footer>
+        <p>粘土在我手，创意如水流，捏出小世界，快乐不停留</p>
+    </footer>
+</body>
+</html>

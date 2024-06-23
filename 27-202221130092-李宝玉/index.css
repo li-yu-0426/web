@@ -1,0 +1,64 @@
+.container {
+    max-width: 1200px;
+    margin: 2em auto;
+    padding: 2em;
+    background: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* 区块样式 */
+section {
+    margin-bottom: 4em;
+}
+
+section h2 {
+    font-size: 2em;
+    margin-bottom: 0.5em;
+    border-bottom: 3px solid #e9ecef;
+    padding-bottom: 0.5em;
+}
+
+section p {
+    line-height: 1.8;
+    margin-top: 1em;
+}
+
+/* 图片和说明 */
+.profile-photo {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 4px solid #e9ecef;
+    transition: transform 0.5s ease;
+}
+
+.profile-photo:hover {
+    transform: scale(1.05);
+}
+
+figcaption {
+    text-align: center;
+    font-style: normal;
+    opacity: 0.8;
+}
+
+/* 粘土介绍 */
+.clay-intro p {
+    text-align: justify;
+}
+
+/* 响应式布局 */
+@media (max-width: 768px) {
+    .container {
+        padding: 1em;
+    }
+
+    section h2 {
+        font-size: 1.5em;
+    }
+
+    .profile-photo {
+        width: 100px;
+        height: 100px;
+    }
+}
